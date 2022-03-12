@@ -40,4 +40,5 @@ int main(){
         cout<<"enter the values only between the given range only";
         break;
     }
+    return 0;
 }
