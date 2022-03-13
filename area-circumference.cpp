@@ -10,17 +10,18 @@ class cal{
         cin>>r;
         float a=pi*r*r;
         cout<<"\narea="<<a;
+        float c=2*pi*r;
+        cout<<"\ncircumference="<<c;
     }
-    void circum(){
+    /*void circum(){
         cout<<"\nenter the radius of the circle:";
         cin>>r;
         float c=2*pi*r;
         cout<<"\ncircumference="<<c;
-    }
+    }*/
 };
 int main(){
-    cal ob[2];
-    ob[0].area();
-    ob[1].circum();
+    cal ob;
+    ob.area();
     return 0;
 }
