@@ -16,4 +16,5 @@ class demo{
 int main(){
     demo ob;//constructor evokes after creation of object.
     ob.disp();
+    return 0;
 }
