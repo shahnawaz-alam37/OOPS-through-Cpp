@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,sum;
+    int n,sum = 0;
     cout<<"enter the n values for sum of n numbers:";
     cin>>n;
     for (int i = 0; i <= n; i++){
