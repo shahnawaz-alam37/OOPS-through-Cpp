@@ -4,18 +4,20 @@ class ref{
     private:
         int a=0;
     public:
-        void value(ref &val,int x){
-        val.a=val.a+x;
+        void value(ref &val){
+        val.a++;
     }  
         void disp(){
-            cout<<"a="<<a<<endl;
+            cout<<"A="<<a<<endl;
     }
 };
 
 int main(){
-    int b=1;
     ref ob;
-    ob.value(ob,b);
+    cout<<"before increment:"<<endl;
+    ob.disp();
+    ob.value(ob);
+    cout<<"after incrementing:"<<endl;
     ob.disp();
     return 0;
 }
