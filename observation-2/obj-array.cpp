@@ -14,7 +14,7 @@ class objarray{
 int main(){
     objarray ob[2];
     int a,b;
-    cout<<"enter age of fist and sencond student:";
+    cout<<"enter age of first and second student:";
     cin>>a>>b;
     ob[1].value(a);
     ob[2].value(b);
