@@ -2,13 +2,13 @@
 using namespace std;
 class ref{
     private:
-        int a=0;
+        int year=1;
     public:
         void value(ref &val){
-        val.a++;
+        val.year++;
     }  
         void disp(){
-            cout<<"A="<<a<<endl;
+            cout<<"Year="<<year<<endl;
     }
 };
 

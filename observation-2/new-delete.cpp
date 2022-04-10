@@ -5,7 +5,7 @@ class info{
     public:
         int area(int x){
             s=x;
-            int area=s*s*s;   
+            int area=s*s;   
             return(area);
         }
 };

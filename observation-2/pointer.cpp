@@ -13,8 +13,8 @@ class student{
 };
 
 int main(){
-    student *s1 = new student();
+    student *s1 ,ob;
+    s1=&ob;
     s1->print();
-    delete s1;
     return 0;
 }
