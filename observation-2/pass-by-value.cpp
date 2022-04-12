@@ -14,17 +14,12 @@ class value{
             cout<<"sum of first variables of two objects="<<a<<endl;
             b= t1.b + t2.b;
             cout<<"sum of second variables of two objects="<<b<<endl;
-            a=a+b;
-        }
-        void disp(){
-            cout<<a<<endl;
+            
         }
 };
 
 int main(){
     value ob1(0,2),ob2(1,3),ob3;
     ob3.sum(ob1,ob2);
-    cout<<"sum of first and second variables=";
-    ob3.disp();
     return 0;
 }
