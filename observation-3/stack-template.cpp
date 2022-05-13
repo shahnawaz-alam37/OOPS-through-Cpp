@@ -26,7 +26,8 @@ void pop(){
         cout<<"Stack underflow"<<endl;
         }
         else{
-        top=top-1;
+            cout<<"\ndeleted element:"<<array[top];
+            top=top-1;
         }
 }
 void display(){
@@ -37,26 +38,26 @@ void display(){
     }
 T stack_operations(){
     while(1){
-	cout<<"Enter the choice:1.push 2.pop  3.pull  4.display "<<endl;
-	int j;
-	cin>>j;
-	switch(j){
-		case 1:
-			cout<<"Enter the value to push";
-			T a;
-			cin>>a;
-			push(a);
-			break;
-		case 2:
-			pop();
-			break;
-		case 3:
-			display();
-			break;
-			
-		default:exit(0);
-	    }  
-    }
+        int j;
+	    cout<<"\n1.push\n2.pop\n3.display\n4.Exit\nEnter the choice:";
+	    cin>>j;
+	    switch(j){
+	    	case 1:
+	    		cout<<"Enter the value to push:";
+	    		T a;
+	    		cin>>a;
+	    		push(a);
+	    		break;
+	    	case 2:
+	    		pop();
+	    		break;
+	    	case 3:
+	    		display();
+	    		break;
+    
+	    	default:exit(0);
+	        }  
+        }
 }
 };
 int main()
@@ -65,7 +66,8 @@ int main()
     stack <float> obj2;
 	while(1)
     {
-    	cout<<"Enter the choice: 1.Integer array  2.Float array"<<endl;
+    	cout<<"\n\nSTACK OPERATIONS WITH CLASS TEMPLATES"<<endl;
+        cout<<"1.Integer array\n2.Float array\nEnter the choice:";
     	int i;
     	cin>>i;
     	switch(i)
