@@ -3,7 +3,7 @@ using namespace std;
 class demo {
     int a,b;
     public:
-        demo(){}
+        demo(){}//parameterised constructor
         demo(int x,int y){
             a=x;
             b=y;
