@@ -3,7 +3,7 @@ using namespace std;
 class demo{
     private:
         int a=37;
-    public:
+    public://access variables using friend function
         friend void disp(demo);
 };
 void disp(demo m){
