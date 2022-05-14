@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//checks wether the number is positive or not
 int main(){
     int a;
     cout<<"enter any number";
