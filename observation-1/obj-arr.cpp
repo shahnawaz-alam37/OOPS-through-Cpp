@@ -16,7 +16,7 @@ class user{
         }
 };
 int main(){
-    user ob[2];
+    user ob[2];//array of objects
     for(int i=0;i<3;i++){
         cout<<"student detail-"<<i+1<<endl;
         ob[i].getdata();
