@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//prints the digit name from 1 to 9
 using namespace std;
 int main(){
     int digit;
