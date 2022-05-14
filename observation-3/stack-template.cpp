@@ -1,64 +1,63 @@
-#include <iostream>//for I/O operations
+#include <iostream>
 using namespace std;
-template<class T>//Template class where T is the data type
-#define MAX 10//Size of the stack is MAX i.e 10
+template<class T>
+#define MAX 10
 class stack{
- 
     int n;//tells the size of the stack
-    int top;//Used for iterating over the stack
-    T array[MAX];//Stack using array implementation with size MAX i.e 10
+    int top;
+    T array[MAX];
 	public:
-    stack(){//constructor
-        n=10;
-        top=-1;
-        
-    }
-void push(T a){
-	if(top==MAX-1)//this condition signifies that stack is full
-        cout<<"Stack overflow"<<endl;
-		else{
-            top=top+1;
-            array[top]=a;    
+        stack(){//constructor
+            n=10;
+            top=-1;
         }
-    }
-void pop(){
-        if(top==-1){//condition for empty stack
-        cout<<"Stack underflow"<<endl;
+        void push(T a){
+	        if(top==MAX-1){//this condition signifies that stack is full
+                cout<<"Stack overflow"<<endl;
+            }
+            else{
+                top=top+1;
+                array[top]=a;    
+            }
         }
-        else{
-            cout<<"\ndeleted element:"<<array[top];
-            top=top-1;
+        void pop(){
+            if(top==-1){//condition for empty stack
+                cout<<"Stack underflow"<<endl;
+            }
+            else{
+                cout<<"\ndeleted element:"<<array[top];
+                top=top-1;
+            }
         }
-}
-void display(){
-        int j;
-        for(j=0;j<=top;j++){
-            cout<<array[j]<<" ";
+        void display(){
+            int j;
+            for(j=0;j<=top;j++){
+                cout<<array[j]<<" ";
+            }
         }
-    }
-T stack_operations(){
-    while(1){
-        int j;
-	    cout<<"\n1.push\n2.pop\n3.display\n4.Exit\nEnter the choice:";
-	    cin>>j;
-	    switch(j){
-	    	case 1:
-	    		cout<<"Enter the value to push:";
-	    		T a;
-	    		cin>>a;
-	    		push(a);
-	    		break;
-	    	case 2:
-	    		pop();
-	    		break;
-	    	case 3:
-	    		display();
-	    		break;
-    
-	    	default:exit(0);
-	        }  
+        T stack_operations(){
+            while(1){
+                int j;
+        	    cout<<"\n1.push\n2.pop\n3.display\n4.Exit\nEnter the choice:";
+        	    cin>>j;
+        	    switch(j){
+        	    	case 1:
+        	    		cout<<"Enter the value to push:";
+        	    		T a;
+        	    		cin>>a;
+        	    		push(a);
+        	    		break;
+        	    	case 2:
+        	    		pop();
+        	    		break;
+        	    	case 3:
+        	    		display();
+        	    		break;
+
+        	    	default:exit(0);
+        	    }  
+            }
         }
-}
 };
 int main()
 {
