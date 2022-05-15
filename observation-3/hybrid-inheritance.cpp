@@ -1,32 +1,29 @@
  #include<iostream>
-using namespace std;
-class A{
+using namespace std;//hybrid inheritance
+class A{//combination of single and hirarchical
  	public:
- 	int x=10;
+ 		int x=10;
 };
 class B : public A{
  	public:
- 	   void disp(){
-            cout<<"X="<<x<<endl;
-        } 
+		int y=20;
 };
-class C{
+class c:public B{
  	public:
- 	int y=20;
-    void show(){
-       cout<<"y="<<y<<endl;
-    }
+	void disp(){
+		cout<<x<<endl;
+	}
 };
-class D : public B, public C{
+class D : public B{
  	public:
  	void sum(){
- 	    cout << "Sum= " << x + y;
+ 	    cout <<y;
  	}
 };
 int main(){
-    D obj1;          
-    obj1.disp();
-    obj1.show();
+    D obj1;
+	c obj2;          
+    obj2.disp();
     obj1.sum();
  	return 0;
 }
