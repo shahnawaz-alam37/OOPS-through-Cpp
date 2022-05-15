@@ -9,6 +9,7 @@ class Stack
         T st[100];
     public:
         void push(T i){
+            cout<<i<<endl;
             st[++top] = i;
         }
         T pop(){
@@ -19,16 +20,14 @@ int main ()
 {
     Stack<int> int_stack;
     Stack<string> str_stack;
+    cout<<"values pushed into the stack"<<endl;
     int_stack.push(67);
     str_stack.push("world");
     str_stack.push("Hello");
-        
-    cout<<"values pushed into the stack"<<endl;
-    cout << int_stack.pop() << endl;
-    cout << str_stack.pop() << endl;
-    cout << str_stack.pop() << endl;
+    
     cout<<"value popped from the stack"<<endl;
-    cout<<"Hello"<<endl;
-    cout<<"world"<<endl;
+    cout << str_stack.pop() << endl; 
+    cout << str_stack.pop() << endl;
+    cout << int_stack.pop() << endl;
     return 0;
 }
