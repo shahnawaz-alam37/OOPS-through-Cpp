@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-inline int simple(int p,int t,int r){
+inline float simple(float p,float t,float r){
     return (p*t*r)/100;
 }
 int main(){
