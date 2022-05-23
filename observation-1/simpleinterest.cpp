@@ -4,7 +4,7 @@ inline float simple(float p,float t,float r){
     return (p*t*r)/100;
 }
 int main(){
-    int p,t,r,si;
+    float p,t,r,si;
     cout<<"enter principle,rate and time:";
     cin>>p>>t>>r;
     si=simple(p,t,r);
