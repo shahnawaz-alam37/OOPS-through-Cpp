@@ -1,23 +1,23 @@
 //total marks of a student
 #include<iostream>
 using namespace std;
-template <class T1> class demo{
-    T1 a;
-    T1 b;
+template <class T>
+class demo{
+    T a,b,c;
     public:
-        demo(T1 i,T1 j){
-            a=i;
-            b=j;
+        demo(){
+            cout<<"enter marks of student in  subjects";
+            cin>>a>>b>>c;
         }
         void disp(){
-            cout<<"Total marks="<<a+b<<endl;
+            cout<<"Total marks="<<a+b+c<<endl;
         }
 };
 
 int main(){
-    demo <int> obj(18,14);
-    demo <double> obj1(19.5,17.5);
+    demo <int> ob;
+    ob.disp();
+    demo <float> obj;
     obj.disp();
-    obj1.disp();
     return 0;
 }
